@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triple Finds Checkout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>TRIPLE FINDS - Checkout</header>
+
+<div class="container">
+  <h2>Checkout</h2>
+  <div id="checkout-summary"></div>
+
+  <h3>Payment Info (Demo)</h3>
+  <input type="text" id="card-name" placeholder="Cardholder Name">
+  <input type="text" id="card-number" placeholder="Card Number (16 digits)">
+  <input type="text" id="card-exp" placeholder="MM/YY">
+  <input type="text" id="card-cvv" placeholder="CVV">
+
+  <button onclick="processPayment()">Pay Now</button>
+</div>
+
+<script src="checkout.js"></script>
+</body>
+</html>

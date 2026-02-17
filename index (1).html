@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triple Finds</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>TRIPLE FINDS</header>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="#" onclick="loadProducts()">All</a>
+
+  <span>Shirts
+    <a href="#" onclick="loadProducts('Shirts','Male')">Male</a>
+    <a href="#" onclick="loadProducts('Shirts','Female')">Female</a>
+  </span>
+
+  <span>Trousers
+    <a href="#" onclick="loadProducts('Trousers','Male')">Male</a>
+    <a href="#" onclick="loadProducts('Trousers','Female')">Female</a>
+  </span>
+
+  <span>Jeans
+    <a href="#" onclick="loadProducts('Jeans','Male')">Male</a>
+    <a href="#" onclick="loadProducts('Jeans','Female')">Female</a>
+  </span>
+
+  <span>Shorts
+    <a href="#" onclick="loadProducts('Shorts','Male')">Male</a>
+  </span>
+
+  <span>Skirts
+    <a href="#" onclick="loadProducts('Skirts','Female')">Female</a>
+  </span>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Elevate Your Style</h1>
+  <p>Premium Clothing for Men & Women</p>
+  <button onclick="loadProducts()">Shop Now</button>
+</div>
+
+<!-- FEATURED PRODUCTS -->
+<div class="container">
+  <h2>Featured Collection</h2>
+  <div id="products"></div>
+</div>
+
+<!-- LOGIN / REGISTER BOX (Bottom Right) -->
+<div id="auth-box">
+  <h3>Login / Register</h3>
+  <input type="email" id="email" placeholder="Email">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+  <button onclick="window.location.href='register.html'">Register</button>
+</div>
+
+<!-- CART BOX (Top Right) -->
+<div id="cart-box">
+  <h3>Cart</h3>
+  <div id="cart-items"></div>
+  <p id="cart-total">Total: ₦0</p>
+  <button onclick="checkout()">Checkout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
